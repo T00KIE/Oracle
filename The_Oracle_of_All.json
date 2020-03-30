@@ -1,0 +1,90 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MikesStuff",
+				"abbreviation": "EB",
+				"full": "The Oracle of All",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1585599207,
+		"dateLastModified": 1585599207
+	},
+	"monster": [
+		{
+			"name": "Iron Juggernaut",
+			"source": "MikesStuff",
+			"size": "M",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d12 + 24",
+				"average": 76
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 22,
+			"dex": 9,
+			"con": 17,
+			"int": 3,
+			"wis": 11,
+			"cha": 6,
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the juggernaut moves at least 20 feet straight toward a creature and then hits it with a ram attack on the same turn, that target must succeed on a {@dc 12} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the juggernaut can make one trample attack against it as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ram",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}25 ({@damage 3d8 + 12}) piercing damage."
+					]
+				},
+				{
+					"name": "Trample",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one {@condition prone} creature. {@h}28 ({@damage 3d10 + 12}) bludgeoning damage damage."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"uniqueId": "aa559bc0eb6a226499485d3a590957f0"
+		}
+	]
+}
